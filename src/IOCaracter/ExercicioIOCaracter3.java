@@ -32,11 +32,38 @@ public class ExercicioIOCaracter3 {
 
         }while (!(line == null)); //enquanto a linha for diferente de null, continue copiando.
         System.out.printf("Arquivo\"%s\" copiado com sucesso! Com tamanho '%d' bytes.\n", f.getName(), f.length());
-        System.out.printf("Arquivo\"%s\" criado com sucesso! Com tamanho '%d' bytes ", fcopy.getName(),fcopy.length());
+        System.out.printf("Arquivo\"%s\" criado com sucesso! Com tamanho '%d' bytes.\n ", fcopy.getName(),fcopy.length());
+
+        PrintWriter pw = new PrintWriter(System.out);
+        pw.println("Recomende 3 marcas de carrojava: ");
+        pw.flush();
+
+        adicionarInfoNoArquivo(fcopy.getName());
+
+        pw.printf("Ok! Tudo certo. Tamanho do arquivo %d bytes.", fcopy.length());
+
+        br.close();
+        bw.close();
+        pw.close();
 
     }
 
-    public static void adicionarInfoNoArquivo(){}
+    public static void adicionarInfoNoArquivo(String arquivo) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = br.readLine();
+
+        BufferedWriter bw = new BufferedWriter(new FileWriter(arquivo,true));
+
+        do {
+            bw.write(line);
+            bw.newLine();
+            line = br.readLine();
+
+        }while (!(line.equalsIgnoreCase("fim")));
+
+        br.close();
+        bw.close();
+    }
 
     public static void main(String[] args) throws IOException {
         copiarArquivo();

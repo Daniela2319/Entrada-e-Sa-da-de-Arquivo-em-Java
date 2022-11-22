@@ -60,6 +60,35 @@ Todas as classes de fluxo de bytes descendem de InputStream e OutputStream.
 * **_ObjetOutputStream_**: Fluxo de saída para objtetos.
 
 
+## I/O de Data
+
+Para ler e gravar valores binários de tipos primitivos Java (int, double, sort por exemplo),
+usaremos DataInputStream e DataOutputStream.
+
+DataInputStream e DataOutputStream são frequentemente usados juntos.
+
+## Serealização
+
+A serialização resume-se em salvar, gravar, capturar o estado de um objeto.
+
+A interface ObjectOutput estende-se da interface DataOutput, o que significa que um
+ObjectOutputStream herda todos os comportamentos de escrever tipos primitivos e Strings como
+um DataOutputStream.
+
+O método **_writeObject(Object)_**: grava um objeto no armazenamento ou fluxo subjacente.
+Este método lança IOException se ocorrer um erro de I/O.
+
+## Desserialização
+
+O processo de reconstrução de um objeto a partir de uma entrada é chamada de desserialização.
+
+A interface ObjectInput estende-se da interface DataInput, o que significa que um ObjectInputStream também tem
+comportamentos de leitura de tipos primitivos e Strings como um DataInputStream.
+
+O método readObject() lê e retorna um objeto. Lança ClassNotFoundException se a classe
+do objeto serializado não puder ser encontrada e IOException se ocorrer um erro de I/O.
+
+
 
 
 

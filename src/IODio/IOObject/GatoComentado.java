@@ -1,4 +1,4 @@
-package IOCaracter.model;
+package IODio.IOObject;
 
 import java.io.Serializable;
 

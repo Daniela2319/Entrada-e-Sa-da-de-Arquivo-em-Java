@@ -1,7 +1,6 @@
-package IOCaracter;
+package IODio.IODataFile;
 
 
-import javax.sound.midi.Soundbank;
 import java.io.*;
 import java.util.Scanner;
 

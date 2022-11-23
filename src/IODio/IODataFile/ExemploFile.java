@@ -1,7 +1,6 @@
-package IOCaracter;
+package IODio.IODataFile;
 
 import java.io.File;
-import java.io.FileDescriptor;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

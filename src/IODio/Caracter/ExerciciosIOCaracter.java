@@ -1,4 +1,4 @@
-package IOCaracter;
+package IODio.Caracter;
 
 import java.io.*;
 

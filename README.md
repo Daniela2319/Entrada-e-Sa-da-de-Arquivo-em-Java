@@ -85,7 +85,7 @@ O processo de reconstrução de um objeto a partir de uma entrada é chamada de 
 A interface ObjectInput estende-se da interface DataInput, o que significa que um ObjectInputStream também tem
 comportamentos de leitura de tipos primitivos e Strings como um DataInputStream.
 
-O método readObject() lê e retorna um objeto. Lança ClassNotFoundException se a classe
+O método **_readObject()_** lê e retorna um objeto. Lança ClassNotFoundException se a classe
 do objeto serializado não puder ser encontrada e IOException se ocorrer um erro de I/O.
 
 

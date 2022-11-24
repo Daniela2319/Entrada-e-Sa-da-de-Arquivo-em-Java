@@ -67,6 +67,19 @@ usaremos DataInputStream e DataOutputStream.
 
 DataInputStream e DataOutputStream são frequentemente usados juntos.
 
+
+## Object I/O
+
+### Classes ObjectOutputStream
+
+Um **_ObjectOutputStream_** grava tipos de dados primitivos e gráficos de objetos Java em um OutputStream.
+Os objetos podem ser lidos (reconstituídos) usando um ObjectInputStream. O armazenamento persistente de objetos pode ser
+realizado usando um arquivo para o fluxo. Se o fluxo for um fluxo de soquete de rede, os objetos podem ser reconstituídos em outro host
+ou em outro processo.
+
+
+Mais informações no link [oracle](docs.oracle.com/javase/7/docs/api/java/io/ObjectOutputStream.html).
+
 ## Serealização
 
 A serialização resume-se em salvar, gravar, capturar o estado de um objeto.
@@ -88,6 +101,11 @@ comportamentos de leitura de tipos primitivos e Strings como um DataInputStream.
 O método **_readObject()_** lê e retorna um objeto. Lança ClassNotFoundException se a classe
 do objeto serializado não puder ser encontrada e IOException se ocorrer um erro de I/O.
 
+
+
+Estudos realizado Daniela Velter.👩‍🚀
+
+Instrutor Camila Cavalcante da DIO.
 
 
 

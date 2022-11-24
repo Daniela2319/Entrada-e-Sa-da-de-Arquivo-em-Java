@@ -32,8 +32,6 @@ public class ExemploIOObject {
         ps.close();
 
 
-
-
     }
 
 
